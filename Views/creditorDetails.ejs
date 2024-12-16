@@ -1,0 +1,16 @@
+<%-include("partials/header")%>
+
+<h1>Creditor Details</h1>
+<p><strong>Username:</strong> <%= creditor.username %></p>
+<p><strong>Each Amount Owed:</strong> <%= creditor.amountOwe %></p>
+<p><strong>Total Amount:</strong> # <%= totalAmountOwe %></p>
+
+<button><a href="/update/<%= creditor._id %>">Update</a></button>
+<button><a href="">Paid Part</a></button>
+<form action="/delete/<%= creditor._id %>" method="POST" style="display:inline;">
+    <input type="hidden" name="_method" value="DELETE">
+    <button type="submit" class="btn btn-info">Cleared and Delete</button>
+</form>
+
+
+<%-include("partials/footer")%>

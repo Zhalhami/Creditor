@@ -1,0 +1,17 @@
+<%-include("partials/header") %>
+<div>
+    <form action="/update/:id" method="post">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Creditor Name</label>
+            <input type="text" name="username" class="form-control" id="exampleFormControlInput1" placeholder="name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Amount</label>
+            <textarea class="form-control" name="amount" id="exampleFormControlTextarea1" rows="3" placeholder="amount"></textarea>
+        
+        </div>
+        <button class= "btn btn-success" type="submit">Update</button>
+    </form>
+    </div>
+
+<%-include("partials/footer") %>
